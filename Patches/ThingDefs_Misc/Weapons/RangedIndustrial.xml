@@ -53,7 +53,7 @@
     <Operation Class="PatchOperationReplace">
         <xpath>*/ThingDef[defName="Bullet_LMG"]/projectile/stoppingPower</xpath>
         <value>
-            <stoppingPower>1.1</stoppingPower>
+            <stoppingPower>1.65</stoppingPower>
         </value>
     </Operation>
 
