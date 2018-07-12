@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- ========== Mini-Turret ========== -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="Bullet_MiniTurret"]/projectile</xpath>
+        <value>
+            <stoppingPower>1</stoppingPower>
+        </value>
+    </Operation>
+
+    <!-- ========== Autocannon Turret ========== -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="Bullet_AutocannonTurret"]/projectile</xpath>
+        <value>
+            <stoppingPower>4.5</stoppingPower>
+        </value>
+    </Operation>
+
+    <!-- ========== Sniper Turret ========== -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="Bullet_TurretSniper"]/projectile</xpath>
+        <value>
+            <stoppingPower>6</stoppingPower>
+        </value>
+    </Operation>
+
+</Patch>

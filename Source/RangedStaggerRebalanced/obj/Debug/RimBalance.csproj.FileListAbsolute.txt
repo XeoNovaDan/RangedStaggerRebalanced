@@ -1,0 +1,4 @@
+E:\Documents\My RimWorld Mods\V1.0\RimBalance\Source\RimBalance\obj\Debug\RimBalance.csproj.CoreCompileInputs.cache
+E:\Documents\My RimWorld Mods\V1.0\RimBalance\Assemblies\RimBalance.dll
+E:\Documents\My RimWorld Mods\V1.0\RimBalance\Source\RimBalance\obj\Debug\RimBalance.csprojAssemblyReference.cache
+E:\Documents\My RimWorld Mods\V1.0\RimBalance\Source\RimBalance\obj\Debug\RimBalance.dll

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- ========== High-Explosive Shell ========== -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="Bullet_Shell_HighExplosive"]/projectile</xpath>
+        <value>
+            <armorPenetrationBase>0.75</armorPenetrationBase>
+            <stoppingPower>5.0</stoppingPower>
+        </value>
+    </Operation>
+
+    <!-- ========== Antigrain Warhead ========== -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="Bullet_Shell_AntigrainWarhead"]/projectile</xpath>
+        <value>
+            <armorPenetrationBase>6</armorPenetrationBase>
+            <stoppingPower>40</stoppingPower>
+        </value>
+    </Operation>
+
+</Patch>

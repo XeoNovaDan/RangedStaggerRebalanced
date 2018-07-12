@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- ========== Revolver ========== -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>*/ThingDef[defName="Bullet_Revolver"]/projectile/stoppingPower</xpath>
+        <value>
+            <stoppingPower>1.2</stoppingPower>
+        </value>
+    </Operation>
+
+    <!-- ========== Autopistol ========== -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="Bullet_Autopistol"]/projectile</xpath>
+        <value>
+            <stoppingPower>0.9</stoppingPower>
+        </value>
+    </Operation>
+
+    <!-- ========== Machine Pistol ========== -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="Bullet_MachinePistol"]/projectile</xpath>
+        <value>
+            <stoppingPower>0.6</stoppingPower>
+        </value>
+    </Operation>
+
+    <!-- ========== Bolt-Action Rifle ========== -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>*/ThingDef[defName="Bullet_BoltActionRifle"]/projectile/stoppingPower</xpath>
+        <value>
+            <stoppingPower>1.8</stoppingPower>
+        </value>
+    </Operation>
+
+    <!-- ========== Pump & Chain Shotgun ========== -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>*/ThingDef[defName="Bullet_Shotgun"]/projectile/stoppingPower</xpath>
+        <value>
+            <stoppingPower>2.7</stoppingPower>
+        </value>
+    </Operation>
+
+    <!-- ========== Heavy SMG ========== -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="Bullet_HeavySMG"]/projectile</xpath>
+        <value>
+            <stoppingPower>1.2</stoppingPower>
+        </value>
+    </Operation>
+
+    <!-- ========== LMG ========== -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>*/ThingDef[defName="Bullet_LMG"]/projectile/stoppingPower</xpath>
+        <value>
+            <stoppingPower>1.1</stoppingPower>
+        </value>
+    </Operation>
+
+    <!-- ========== Assault Rifle ========== -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="Bullet_AssaultRifle"]/projectile</xpath>
+        <value>
+            <stoppingPower>1.1</stoppingPower>
+        </value>
+    </Operation>
+
+    <!-- ========== Sniper Rifle ========== -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>*/ThingDef[defName="Bullet_SniperRifle"]/projectile/stoppingPower</xpath>
+        <value>
+            <stoppingPower>2.5</stoppingPower>
+        </value>
+    </Operation>
+
+    <!-- ========== Minigun ========== -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="Bullet_Minigun"]/projectile</xpath>
+        <value>
+            <stoppingPower>1</stoppingPower>
+        </value>
+    </Operation>
+
+</Patch>

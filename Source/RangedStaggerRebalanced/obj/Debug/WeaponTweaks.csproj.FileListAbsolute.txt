@@ -1,0 +1,8 @@
+E:\Documents\My RimWorld Mods\V1.0\WeaponTweaks\Assemblies\WeaponTweaks.dll
+E:\Documents\My RimWorld Mods\V1.0\WeaponTweaks\Source\WeaponTweaks\obj\Debug\WeaponTweaks.csprojAssemblyReference.cache
+E:\Documents\My RimWorld Mods\V1.0\WeaponTweaks\Source\WeaponTweaks\obj\Debug\WeaponTweaks.csproj.CoreCompileInputs.cache
+E:\Documents\My RimWorld Mods\V1.0\WeaponTweaks\Source\WeaponTweaks\obj\Debug\WeaponTweaks.dll
+E:\Documents\My RimWorld Mods\V1.0\RangedStaggerRebalanced\Assemblies\WeaponTweaks.dll
+E:\Documents\My RimWorld Mods\V1.0\RangedStaggerRebalanced\Source\RangedStaggerRebalanced\obj\Debug\WeaponTweaks.csprojAssemblyReference.cache
+E:\Documents\My RimWorld Mods\V1.0\RangedStaggerRebalanced\Source\RangedStaggerRebalanced\obj\Debug\WeaponTweaks.csproj.CoreCompileInputs.cache
+E:\Documents\My RimWorld Mods\V1.0\RangedStaggerRebalanced\Source\RangedStaggerRebalanced\obj\Debug\WeaponTweaks.dll

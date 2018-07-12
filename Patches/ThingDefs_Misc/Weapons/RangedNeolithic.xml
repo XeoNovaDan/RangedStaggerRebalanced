@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- All tribal weapons have 50% of their normal AP -->
+
+    <!-- ========== Shortbow ========== -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="Arrow_Short"]/projectile</xpath>
+        <value>
+            <stoppingPower>1.1</stoppingPower>
+            <armorPenetrationBase>0.0825</armorPenetrationBase>
+        </value>
+    </Operation>
+
+    <!-- ========== Pila ========== -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>*/ThingDef[defName="Pilum_Thrown"]/projectile/armorPenetrationBase</xpath>
+        <value>
+            <armorPenetrationBase>0.1875</armorPenetrationBase>
+        </value>
+    </Operation>
+
+    <!-- ========== Recurve Bow ========== -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>*/ThingDef[defName="Arrow_Recurve"]/projectile/stoppingPower</xpath>
+        <value>
+            <stoppingPower>1.4</stoppingPower>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="Arrow_Recurve"]/projectile</xpath>
+        <value>
+            <armorPenetrationBase>0.105</armorPenetrationBase>
+        </value>
+    </Operation>
+
+    <!-- ========== Greatbow ========== -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>*/ThingDef[defName="Arrow_Great"]/projectile/stoppingPower</xpath>
+        <value>
+            <stoppingPower>1.7</stoppingPower>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>*/ThingDef[defName="Arrow_Great"]/projectile/armorPenetrationBase</xpath>
+        <value>
+            <armorPenetrationBase>0.1275</armorPenetrationBase>
+        </value>
+    </Operation>
+
+</Patch>
