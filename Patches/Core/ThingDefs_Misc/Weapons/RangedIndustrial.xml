@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- ========== Revolver ========== -->
+    <Operation Class="PatchOperationRemove">
+        <xpath>*/ThingDef[defName="Bullet_Revolver"]/projectile/stoppingPower</xpath>
+    </Operation>
+
+    <!-- ========== Bolt-Action Rifle ========== -->
+    <Operation Class="PatchOperationRemove">
+        <xpath>*/ThingDef[defName="Bullet_BoltActionRifle"]/projectile/stoppingPower</xpath>
+    </Operation>
+
+    <!-- ========== Pump & Chain Shotgun ========== -->
+    <Operation Class="PatchOperationRemove">
+        <xpath>*/ThingDef[defName="Bullet_Shotgun"]/projectile/stoppingPower</xpath>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>*/ThingDef[defName="Bullet_Shotgun"]</xpath>
+        <value>
+            <li Class="RangedStaggerRebalanced.StoppingPowerExtension">
+                <stoppingPowerFactor>1.5</stoppingPowerFactor>
+            </li>
+        </value>
+    </Operation>
+
+    <!-- ========== LMG ========== -->
+    <Operation Class="PatchOperationRemove">
+        <xpath>*/ThingDef[defName="Bullet_LMG"]/projectile/stoppingPower</xpath>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>*/ThingDef[defName="Bullet_LMG"]</xpath>
+        <value>
+            <li Class="RangedStaggerRebalanced.StoppingPowerExtension">
+                <stoppingPowerFactor>1.5</stoppingPowerFactor>
+            </li>
+        </value>
+    </Operation>
+
+    <!-- ========== Sniper Rifle ========== -->
+    <Operation Class="PatchOperationRemove">
+        <xpath>*/ThingDef[defName="Bullet_SniperRifle"]/projectile/stoppingPower</xpath>
+    </Operation>
+
+</Patch>

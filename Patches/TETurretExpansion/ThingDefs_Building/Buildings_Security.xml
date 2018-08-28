@@ -1,0 +1,12 @@
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>[XND] TE Turret Expansion</li>
+        </mods>
+        <match Class="PatchOperationRemove">
+            <xpath>*/ThingDef[defName="Projectile_Ballista" or defName="Bullet_TurretMGEmplacement"]/projectile/stoppingPower</xpath>
+        </match>
+    </Operation>
+
+</Patch>

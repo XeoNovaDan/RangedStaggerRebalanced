@@ -2,3 +2,7 @@ E:\Documents\My RimWorld Mods\V1.0\RangedStaggerRebalanced\Assemblies\RangedStag
 E:\Documents\My RimWorld Mods\V1.0\RangedStaggerRebalanced\Source\RangedStaggerRebalanced\obj\Debug\RangedStaggerRebalanced.csprojAssemblyReference.cache
 E:\Documents\My RimWorld Mods\V1.0\RangedStaggerRebalanced\Source\RangedStaggerRebalanced\obj\Debug\RangedStaggerRebalanced.csproj.CoreCompileInputs.cache
 E:\Documents\My RimWorld Mods\V1.0\RangedStaggerRebalanced\Source\RangedStaggerRebalanced\obj\Debug\RangedStaggerRebalanced.dll
+E:\Documents\My RimWorld Mods\B19\RangedStaggerRebalanced\Assemblies\RangedStaggerRebalanced.dll
+E:\Documents\My RimWorld Mods\B19\RangedStaggerRebalanced\Source\RangedStaggerRebalanced\obj\Debug\RangedStaggerRebalanced.csprojAssemblyReference.cache
+E:\Documents\My RimWorld Mods\B19\RangedStaggerRebalanced\Source\RangedStaggerRebalanced\obj\Debug\RangedStaggerRebalanced.csproj.CoreCompileInputs.cache
+E:\Documents\My RimWorld Mods\B19\RangedStaggerRebalanced\Source\RangedStaggerRebalanced\obj\Debug\RangedStaggerRebalanced.dll

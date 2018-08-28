@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- ========== Charge Lance ========== -->
+    <Operation Class="PatchOperationRemove">
+        <xpath>*/ThingDef[defName="Bullet_ChargeLance"]/projectile/stoppingPower</xpath>
+    </Operation>
+
+</Patch>

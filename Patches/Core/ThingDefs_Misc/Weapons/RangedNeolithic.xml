@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- ========== Recurve Bow ========== -->
+    <Operation Class="PatchOperationRemove">
+        <xpath>*/ThingDef[defName="Arrow_Recurve"]/projectile/stoppingPower</xpath>
+    </Operation>
+
+    <!-- ========== Greatbow ========== -->
+    <Operation Class="PatchOperationRemove">
+        <xpath>*/ThingDef[defName="Arrow_Great"]/projectile/stoppingPower</xpath>
+    </Operation>
+
+</Patch>
