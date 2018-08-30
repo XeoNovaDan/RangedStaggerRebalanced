@@ -1,0 +1,7 @@
+<LanguageData>
+
+    <RangedStaggerRebalancedSettingsCategory>Ranged Stagger Rebalanced</RangedStaggerRebalancedSettingsCategory>
+    <SettingUseExperimentalCurve>Use experimental formula</SettingUseExperimentalCurve>
+    <SettingUseExperimentalCurveToolTip>Change the ranged stagger duration duration formula to:\n* 20% duration if stopping power is equal to body size\n* 50% duration if stopping power is 1.5x body size\n* 100% duration if stopping power is 3x body size</SettingUseExperimentalCurveToolTip>
+
+</LanguageData>

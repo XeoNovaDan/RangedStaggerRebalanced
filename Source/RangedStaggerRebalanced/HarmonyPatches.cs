@@ -123,10 +123,23 @@ namespace RangedStaggerRebalanced
         {
             float stoppingPower = GetAdjustedStoppingPowerFromLauncher(baseStoppingPower, launcher);
             float bodySize = pawn.BodySize;
-            float powerPct = (stoppingPower - bodySize) / stoppingPower;
+            float powerPct = (RangedStaggerRebalancedSettings.useExperimentalCurve) ? stoppingPower / bodySize : (stoppingPower - bodySize) / stoppingPower;
 
-            return Mathf.RoundToInt(BaseStaggerTicks * PowerPctCurve.Evaluate(powerPct));
+            int staggerDuration = Mathf.RoundToInt(BaseStaggerTicks * ((RangedStaggerRebalancedSettings.useExperimentalCurve) ?
+                ExperimentalCurve.Evaluate(powerPct) : PowerPctCurve.Evaluate(powerPct)));
+
+            if (Prefs.DevMode)
+                Log.Message($"stagger duration: {Math.Round(staggerDuration.TicksToSeconds(), 2)}s");
+
+            return staggerDuration;
         }
+
+        private static SimpleCurve ExperimentalCurve = new SimpleCurve
+        {
+            new CurvePoint(1f, 0.2f),
+            new CurvePoint(1.5f, 0.5f),
+            new CurvePoint(3f, 1f)
+        };
 
         private const int BaseStaggerTicks = 120;
 
