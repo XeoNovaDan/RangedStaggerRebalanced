@@ -4,5 +4,5 @@
 	<author>XeoNovaDan</author>
 	<url>https://ludeon.com/forums/index.php?topic=29503.0</url>
 	<targetVersion>0.19.0</targetVersion>
-	<description>Current version: v1.1 (30th August 2018)\n\nRebalances ranged stagger so that the stagger duration depends on the difference between the weapon's stopping power and target's body size, rather than always being a flat 95 ticks.</description>
+	<description>Current version: v1.1.1 (31st August 2018)\n\nRebalances ranged stagger so that the stagger duration depends on the difference between the weapon's stopping power and target's body size, rather than always being a flat 95 ticks.</description>
 </ModMetaData>

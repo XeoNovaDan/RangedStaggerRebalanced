@@ -35,6 +35,26 @@ namespace RangedStaggerRebalanced
             h.Patch(AccessTools.Method(typeof(Bullet), "Impact"), null, null,
                 new HarmonyMethod(patchType, nameof(TranspileImpact)));
 
+            OutputStoppingPowerPatchesOnStartup();
+
+        }
+
+        private static void OutputStoppingPowerPatchesOnStartup()
+        {
+            string startupOutputMessageBase = "Ranged Stagger Rebalanced has completed dynamic stopping power patching. Scroll down for details...";
+            string outputWeaponsPatched = "Weapons that have been patched:";
+            string outputWeaponsNotPatched = "Weapons that haven't been patched:";
+            IEnumerable<ThingDef> rangedWeapons = DefDatabase<ThingDef>.AllDefs.Where(t => t.IsRangedWeapon);
+            foreach (ThingDef weapon in rangedWeapons)
+            {
+                ProjectileProperties projectile = weapon.Verbs?[0]?.defaultProjectile?.projectile;
+                string newLine = "\n- " + weapon.defName + " (" + weapon.label + ")";
+                if (projectile?.stoppingPower == 0.5f || projectile?.damageDef.defaultStoppingPower == 0.5f)
+                    outputWeaponsPatched += newLine;
+                else
+                    outputWeaponsNotPatched += newLine;
+            }
+            Log.Message(startupOutputMessageBase + "\n\n" + outputWeaponsPatched + "\n\n" + outputWeaponsNotPatched + "\n");
         }
 
         #region PostfixStoppingPower
