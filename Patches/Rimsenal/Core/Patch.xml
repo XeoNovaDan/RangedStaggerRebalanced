@@ -1,0 +1,12 @@
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Rimsenal</li>
+        </mods>
+        <match Class="PatchOperationRemove">
+            <xpath>*/ThingDef[defName="Bullet_Hrunting" or defName="Bullet_Trollsverd" or defName="JI_Fafnir" or defName="Bullet_Gramr" or defName="Bullet_Muspell"]/projectile/stoppingPower</xpath>
+        </match>
+    </Operation>
+
+</Patch>

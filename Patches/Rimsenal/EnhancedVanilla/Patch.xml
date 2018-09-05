@@ -1,0 +1,26 @@
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Rimsenal - Enhanced Vanilla Pack</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+                <li Class="PatchOperationRemove">
+                    <xpath>*/ThingDef[defName="Bullet_ThrowingAxes" or defName="Bullet_ThrowingClubs" or defName="Bullet_PistolHeavyRevolver"
+                    or defName="Bullet_RSAMRifle" or defName="Bullet_AutomaticRifle" or defName="Bullet_FR"]/projectile/stoppingPower</xpath>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>*/ThingDef[defName="Bullet_ThrowingClubs"]</xpath>
+                    <value>
+                        <li Class="RangedStaggerRebalanced.StoppingPowerExtension">
+                            <stoppingPowerFactor>1.5</stoppingPowerFactor>
+                        </li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>

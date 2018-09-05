@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
+    <!-- ========== Pila ========== -->
+    <Operation Class="PatchOperationRemove">
+        <xpath>*/ThingDef[defName="Pilum_Thrown"]/projectile/stoppingPower</xpath>
+    </Operation>
+
     <!-- ========== Recurve Bow ========== -->
     <Operation Class="PatchOperationRemove">
         <xpath>*/ThingDef[defName="Arrow_Recurve"]/projectile/stoppingPower</xpath>
